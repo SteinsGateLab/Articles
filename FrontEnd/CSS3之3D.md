@@ -28,21 +28,29 @@ transition-timing-function:ease || linear || ease-in || ease-out || ease-in-out
 ### Key Properties
 - perspective
 - perspective-origin
+
 浏览器是三维世界的窗口，三维物体与窗口的距离就是perspective属性的值。从窗口看世界的视点就是perspective-origin，这个值一般设置的是两个百分比数值，分别对应x轴和y轴的位置。
+
 这两个属性的设置告诉浏览器我们将怎样看里面的三维世界。这就完成了三维设置的工作。
+
 ### Property : transform
 利用transform调整元素展现三维效果。
+
 正方向：X向右，Y向下，Z从屏幕向人
-transform-style:preserve-3d
-translate——
-    translateX(x px)
-    translateY(y px)
-    translateZ(z px)
-rotate——
-    rotateX(x deg)
-    rotateY(y deg)
-    rotateZ(z deg)
-transform-origin调整旋转中心，默认是正中心。
+
+transform-style:preserve-3d  
+translate——  
+    translateX(x px)  
+    translateY(y px)  
+    translateZ(z px)  
+
+rotate——  
+    rotateX(x deg)  
+    rotateY(y deg)  
+    rotateZ(z deg)  
+
+transform-origin调整旋转中心，默认是正中心，可以通过下表属性进行修改。
+
  X轴  | Y轴  | Z轴 
 ------|------|------
 left  |top   |length px
